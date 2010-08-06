@@ -90,3 +90,7 @@ ul.tagger input[type="text"] {
 	background-color:#FFFFFF;
 	color:#333333;
 }
+
+#user_tags {
+  height: 32px;
+}
