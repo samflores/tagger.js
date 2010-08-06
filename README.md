@@ -13,15 +13,31 @@ DEPENDENCIES
 USAGE
 =====
 
-html:
+html with no preexisting tags:
 
     <ul id="user_tags"></ul>
 
+with preexisting tags:
+    
+    <ul id="user_tags">
+      <li>weldyss</li>
+      <li>samflores</li>
+    </ul>
+
 javascript:
 
-    $(function() { $("user_tags").tagger(); });
+    $(function() { $("#user_tags").tagger(); });
 
 
 PARAMETERS
+==========
 
-* source: an array with the pre-existent tags
+**source**: an array with the preexisting tags
+
+    $("#user_tags").tagger({ 
+      source: [
+        "dmitrynix", "cleitonfco", "samflores",
+        "caironoleto", "weldyss", "cyruscavalcante", 
+        "italoveloso", "ewertonsjp", "pauloh"
+      ] 
+    });
