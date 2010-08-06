@@ -1,0 +1,22 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <meta encoding="UTF-8">
+    <title></title> 
+    <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8" ></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript" charset="utf-8" ></script>
+    <script src="js/jquery-ui-autocomplete.min.js" type="text/javascript" charset="utf-8" ></script>
+    <script src="js/jquery.tagger.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        $("#user_tags").tagger({source: ["abc", "def"]});
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="user_tags" style="height: 32px">
+      
+    </ul>
+  </body>
+</html>
