@@ -7,7 +7,6 @@
 	    return this.each(function() {
     		var $el = $(this);
 
-        
     		var field_name;
     		var pattern = /^(\w+?)_(.*)$/;
     		$el.addClass("tagger");
