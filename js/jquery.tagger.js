@@ -9,9 +9,10 @@
 
         
     		var field_name;
+    		var pattern = /^(\w+?)_(.*)$/;
     		$el.addClass("tagger");
-    		if (/^(\w+?)_(.*)$/.match( $el.attr("id") )) {
-          var result = /^(\w+?)_(.*)$/.exec( $el.attr("id") );  
+    		if ($el.attr("id").match(pattern)) {
+          var result = pattern.exec( $el.attr("id") );  
           field_name = result[1]+"["+result[2]+"][]";
     		} else {
     		  field_name = $el.attrib("id");
